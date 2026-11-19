@@ -1,0 +1,50 @@
+2026-11-19 14:56:42 ERROR Listener - Test case failed. 
+2026-11-19 14:56:42 ERROR Listener - Test case failed. 
+2026-11-19 14:56:42 ERROR Listener - Test case failed. 
+2026-11-19 14:56:42 ERROR Listener - Test case failed. 
+2026-11-19 14:56:43 ERROR Listener - Test case failed. 
+2026-11-19 14:56:43 ERROR Listener - Test case failed. 
+2026-11-19 14:56:43 ERROR Listener - Test case failed. 
+2026-11-19 14:56:43 ERROR Listener - Test case failed. 
+2026-11-19 14:56:43 ERROR Listener - Test case failed. 
+2026-11-19 14:56:43 ERROR Listener - Test case failed. 
+2026-11-19 14:56:45 INFO  Listener - Test case Passed.
+2026-11-19 14:56:45 ERROR Listener - Test case failed. 
+2026-11-19 14:56:45 ERROR Listener - Test case failed. 
+2026-11-19 14:56:46 INFO  Listener - Test case Passed.
+2026-11-19 14:56:46 INFO  Listener - Test case Passed.
+2026-11-19 14:56:46 INFO  Listener - Test case Passed.
+2026-11-19 15:47:37 INFO  Listener - Test Suite Started: Test
+2026-11-19 15:47:37 INFO  Listener - Test Case Started: compareVersionAAndB
+2026-11-19 15:47:40 ERROR Listener - Test Case Failed: compareVersionAAndB
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testAdditionalTransaction
+2026-11-19 15:47:40 ERROR Listener - Test Case Failed: testAdditionalTransaction
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testApiFailureHandling
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testApiFailureHandling
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testDataTypeValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testDataTypeValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testDuplicateTransactionDetection
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testDuplicateTransactionDetection
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testEmptyResponseValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testEmptyResponseValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testFieldCountValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testFieldCountValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testMissingTransaction
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testMissingTransaction
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testNullVsMissingFieldValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testNullVsMissingFieldValidation
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testPositiveScenario
+2026-11-19 15:47:40 ERROR Listener - Test Case Failed: testPositiveScenario
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testResponseTimeComparison
+2026-11-19 15:47:40 INFO  Listener - Test Case Passed: testResponseTimeComparison
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testValueAndSchemaMismatch
+2026-11-19 15:47:40 ERROR Listener - Test Case Failed: testValueAndSchemaMismatch
+2026-11-19 15:47:40 INFO  Listener - Test Case Started: testValueDateFilterValidation
+2026-11-19 15:47:41 INFO  Listener - Test Case Passed: testValueDateFilterValidation
+2026-11-19 15:47:41 INFO  Listener - Test Case Started: testVersionAAPI
+2026-11-19 15:47:41 INFO  Listener - Test Case Passed: testVersionAAPI
+2026-11-19 15:47:41 INFO  Listener - Test Case Started: testVersionBAPI
+2026-11-19 15:47:41 INFO  Listener - Test Case Passed: testVersionBAPI
+2026-11-19 15:47:41 INFO  Listener - Test Case Started: testVersionComparisonReport
+2026-11-19 15:47:41 INFO  Listener - Test Case Passed: testVersionComparisonReport
+2026-11-19 15:47:41 INFO  Listener - Test Suite Finished: Test

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="12" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-19T15:47:37 CET" name="Suite" finished-at="2026-11-19T15:47:41 CET" duration-ms="3874">
+    <groups>
+    </groups>
+    <test started-at="2026-11-19T15:47:37 CET" name="Test" finished-at="2026-11-19T15:47:41 CET" duration-ms="3874">
+      <class name="org.banking.qa.apitest.EODValidationTest">
+        <test-method signature="compareVersionAAndB()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:37 CET" name="compareVersionAAndB" finished-at="2026-11-19T15:47:40 CET" duration-ms="2910" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[FAILED: Version A and Version B responses are not matching! expected [0] but found [4]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: FAILED: Version A and Version B responses are not matching! expected [0] but found [4]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.banking.qa.apitest.EODValidationTest.compareVersionAAndB(EODValidationTest.java:108)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareVersionAAndB -->
+        <test-method signature="testAdditionalTransaction()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testAdditionalTransaction" finished-at="2026-11-19T15:47:40 CET" duration-ms="100" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Additional transactions found in Version B expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Additional transactions found in Version B expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.banking.qa.apitest.EODValidationTest.testAdditionalTransaction(EODValidationTest.java:372)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdditionalTransaction -->
+        <test-method signature="testApiFailureHandling()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testApiFailureHandling" finished-at="2026-11-19T15:47:40 CET" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiFailureHandling -->
+        <test-method signature="testDataTypeValidation()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testDataTypeValidation" finished-at="2026-11-19T15:47:40 CET" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataTypeValidation -->
+        <test-method signature="testDuplicateTransactionDetection()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testDuplicateTransactionDetection" finished-at="2026-11-19T15:47:40 CET" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDuplicateTransactionDetection -->
+        <test-method signature="testEmptyResponseValidation()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testEmptyResponseValidation" finished-at="2026-11-19T15:47:40 CET" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyResponseValidation -->
+        <test-method signature="testFieldCountValidation()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testFieldCountValidation" finished-at="2026-11-19T15:47:40 CET" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFieldCountValidation -->
+        <test-method signature="testMissingTransaction()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testMissingTransaction" finished-at="2026-11-19T15:47:40 CET" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingTransaction -->
+        <test-method signature="testNullVsMissingFieldValidation()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testNullVsMissingFieldValidation" finished-at="2026-11-19T15:47:40 CET" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNullVsMissingFieldValidation -->
+        <test-method signature="testPositiveScenario()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testPositiveScenario" finished-at="2026-11-19T15:47:40 CET" duration-ms="64" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Transaction IDs should match]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Transaction IDs should match
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.assertEquals(Assert.java:2051)
+at org.banking.qa.apitest.EODValidationTest.testPositiveScenario(EODValidationTest.java:330)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveScenario -->
+        <test-method signature="testResponseTimeComparison()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testResponseTimeComparison" finished-at="2026-11-19T15:47:40 CET" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseTimeComparison -->
+        <test-method signature="testValueAndSchemaMismatch()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testValueAndSchemaMismatch" finished-at="2026-11-19T15:47:40 CET" duration-ms="63" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Value or Schema mismatches found! expected [0] but found [2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Value or Schema mismatches found! expected [0] but found [2]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.banking.qa.apitest.EODValidationTest.testValueAndSchemaMismatch(EODValidationTest.java:428)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValueAndSchemaMismatch -->
+        <test-method signature="testValueDateFilterValidation()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:40 CET" name="testValueDateFilterValidation" finished-at="2026-11-19T15:47:41 CET" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValueDateFilterValidation -->
+        <test-method signature="testVersionAAPI()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:41 CET" name="testVersionAAPI" finished-at="2026-11-19T15:47:41 CET" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVersionAAPI -->
+        <test-method signature="testVersionBAPI()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:41 CET" name="testVersionBAPI" finished-at="2026-11-19T15:47:41 CET" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVersionBAPI -->
+        <test-method signature="testVersionComparisonReport()[pri:0, instance:org.banking.qa.apitest.EODValidationTest@5fa47fea]" started-at="2026-11-19T15:47:41 CET" name="testVersionComparisonReport" finished-at="2026-11-19T15:47:41 CET" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVersionComparisonReport -->
+      </class> <!-- org.banking.qa.apitest.EODValidationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

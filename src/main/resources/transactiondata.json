@@ -1,0 +1,98 @@
+[
+  {
+    "transactionId": "T002",
+    "accountId": "A123",
+    "valueDate": "2026-11-16",
+    "bookingDate": "2026-11-16",
+    "currency": "EUR",
+    "amount": 250.00,
+    "debitCreditIndicator": "DEBIT",
+    "transactionType": "PAYMENT",
+    "description": "Payment transaction",
+    "status": "BOOKED"
+  },
+  {
+    "transactionId": "T003",
+    "accountId": "A124",
+    "valueDate": "2026-11-16",
+    "bookingDate": "2026-11-16",
+    "currency": "EUR",
+    "amount": 500.00,
+    "debitCreditIndicator": "CREDIT",
+    "transactionType": "TRANSFER",
+    "description": "Incoming transfer",
+    "status": "BOOKED"
+  },
+  {
+    "transactionId": "T004",
+    "accountId": "A125",
+    "valueDate": "2026-11-16",
+    "bookingDate": "2026-11-16",
+    "currency": "USD",
+    "amount": 75.50,
+    "debitCreditIndicator": "DEBIT",
+    "transactionType": "PAYMENT",
+    "description": "Online purchase",
+    "status": "BOOKED"
+  },
+  {
+    "transactionId": "T005",
+    "accountId": "A123",
+    "valueDate": "2026-11-17",
+    "bookingDate": "2026-11-17",
+    "currency": "EUR",
+    "amount": 120.00,
+    "debitCreditIndicator": "CREDIT",
+    "transactionType": "REFUND",
+    "description": "Refund received",
+    "status": "BOOKED"
+  },
+  {
+    "transactionId": "T006",
+    "accountId": "A126",
+    "valueDate": "2026-11-17",
+    "bookingDate": "2026-11-17",
+    "currency": "GBP",
+    "amount": 90.25,
+    "debitCreditIndicator": "DEBIT",
+    "transactionType": "PAYMENT",
+    "description": "Utility payment",
+    "status": "BOOKED"
+  },
+  {
+    "transactionId": "T007",
+    "accountId": "A124",
+    "valueDate": "2026-11-17",
+    "bookingDate": "2026-11-17",
+    "currency": "EUR",
+    "amount": 300.00,
+    "debitCreditIndicator": "CREDIT",
+    "transactionType": "TRANSFER",
+    "description": "Salary credit",
+    "status": "BOOKED"
+  },
+  {
+    "transactionId": "T008",
+    "accountId": "A127",
+    "valueDate": "2026-11-17",
+    "bookingDate": "2026-11-17",
+    "currency": "USD",
+    "amount": 45.00,
+    "debitCreditIndicator": "DEBIT",
+    "transactionType": "FEE",
+    "description": "Service charge",
+    "status": "PENDING"
+  },
+  {
+    "transactionId": "T009",
+    "accountId": "A125",
+    "valueDate": "2026-11-17",
+    "bookingDate": "2026-11-17",
+    "currency": "EUR",
+    "amount": 650.00,
+    "debitCreditIndicator": "CREDIT",
+    "transactionType": "TRANSFER",
+    "description": "Account transfer",
+    "status": "BOOKED"
+  }
+]
