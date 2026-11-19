@@ -10,15 +10,6 @@ Compares the end-of-day (EOD) transaction API of **Version A** (old, baseline) w
 | `StringBootProjectDemo2` | Version B (Spring Boot, Gradle) | 8083 |
 | `Banking-API-Regression-Testing` | This test suite (TestNG, Jackson, Java HttpClient) | – |
 
-## Endpoints (same in A and B)
-
-| Method | Path | Purpose |
-|---|---|---|
-| GET | `/api/v1/eod-transactions?valueDate=2026-11-16` | EOD transactions (JSON array). Invalid date → 400 |
-| POST | `/api/v1/transactions` | Load one transaction. 201 created, 409 duplicate, 400 invalid |
-| GET | `/actuator/health` | Health check |
-
-Spring Boot changes needed for this are in `docs/springboot-snippets.md`.
 
 ## Prerequisites
 
