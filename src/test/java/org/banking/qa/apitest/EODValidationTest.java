@@ -25,7 +25,8 @@ public class EODValidationTest {
 
 	@Test
 	public void testVersionAAPI() {
-		given().queryParam("valueDate", ValueDate).when().get(Version_A_URL).then().statusCode(200)
+		given()
+		.queryParam("valueDate", ValueDate).when().get(Version_A_URL).then().statusCode(200)
 				.contentType(ContentType.JSON);
 	}
 
@@ -38,18 +39,18 @@ public class EODValidationTest {
 	// Test case 1 : compare Version A and Version B
 	@Test
 	public void compareVersionAAndB() throws Exception {
-		// Get Version A response
+		// 1. Get Version A response
 		String responseA = given().queryParam("valueDate", ValueDate).when().get(Version_A_URL).then().statusCode(200)
 				.extract().asString();
 		// Get Version B response
 		String responseB = given().queryParam("valueDate", ValueDate).when().get(Version_B_URL).then().statusCode(200)
 				.extract().asString();
-		// Convert responses into JSON
+		// 2. Convert responses into JSON
 		JsonNode dataA = mapper.readTree(responseA);
 		JsonNode dataB = mapper.readTree(responseB);
 		Assert.assertTrue(dataA.isArray(), "Version A response should be a JSON array");
 		Assert.assertTrue(dataB.isArray(), "Version B response should be a JSON array");
-		// Store records using transactionId
+		// 3. Store records using transactionId
 		Map<String, JsonNode> mapA = new HashMap<>();
 		Map<String, JsonNode> mapB = new HashMap<>();
 		for (JsonNode record : dataA) {
@@ -59,7 +60,7 @@ public class EODValidationTest {
 			mapB.put(record.path("transactionId").asText(), record);
 		}
 		int mismatchCount = 0;
-		// Compare records
+		//4. Compare records
 		for (String id : mapA.keySet()) {
 			if (!mapB.containsKey(id)) {
 				System.out.println("Missing in Version B: " + id);
@@ -71,7 +72,7 @@ public class EODValidationTest {
 			Set<String> fields = new HashSet<>();
 			recordA.fieldNames().forEachRemaining(fields::add);
 			recordB.fieldNames().forEachRemaining(fields::add);
-			// Compare each field
+			// 5. Compare each field
 			for (String field : fields) {
 				JsonNode valueA = recordA.get(field);
 				JsonNode valueB = recordB.get(field);
@@ -96,14 +97,14 @@ public class EODValidationTest {
 				}
 			}
 		}
-		// Check additional records in Version B
+		// 6. Check additional records in Version B
 		for (String id : mapB.keySet()) {
 			if (!mapA.containsKey(id)) {
 				System.out.println("Additional record in Version B: " + id);
 				mismatchCount++;
 			}
 		}
-		// Final result
+		// 7. Final result
 		System.out.println("Total mismatches: " + mismatchCount);
 		Assert.assertEquals(mismatchCount, 0, "FAILED: Version A and Version B responses are not matching!");
 	}
@@ -284,7 +285,7 @@ public class EODValidationTest {
 	@Test
 	public void testEmptyResponseValidation() throws Exception {
 		// Use a date that should have no transactions
-		String emptyDate = ValueDate;
+		String emptyDate = "2026-11-18";
 		Response responseA = given().queryParam("valueDate", emptyDate).when().get(Version_A_URL);
 		Response responseB = given().queryParam("valueDate", emptyDate).when().get(Version_B_URL);
 		Assert.assertEquals(responseA.statusCode(), 200);
@@ -300,6 +301,12 @@ public class EODValidationTest {
 		} else {
 			System.out.println("At least one API returned records for the selected date");
 		}
+		
+		 Assert.assertTrue(dataA.isEmpty(),
+		            "Version A response should be empty");
+
+		    Assert.assertTrue(dataB.isEmpty(),
+		            "Version B response should be empty");
 	}
 
 	// Test Case 10: API failure handling
@@ -433,7 +440,7 @@ public class EODValidationTest {
 		return given().queryParam("valueDate", ValueDate).when().get(url);
 	}
 
-	// Test Case 7: Generate Version A versus Version B comparison summary
+	//  Generate Version A versus Version B comparison summary
 	@Test
 	public void testVersionComparisonReport() throws Exception {
 		JsonNode dataA = mapper.readTree(getApiResponse(Version_A_URL).asString());

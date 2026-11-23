@@ -5,7 +5,9 @@
     <classes>
       <class name="org.banking.qa.apitest.EODValidationTest">
         <methods>
+          <include name="testDataTypeValidation"/>
           <include name="testPositiveScenario"/>
+          <include name="testNullVsMissingFieldValidation"/>
           <include name="testValueAndSchemaMismatch"/>
           <include name="testAdditionalTransaction"/>
           <include name="compareVersionAAndB"/>
